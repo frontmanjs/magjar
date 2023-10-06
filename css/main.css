@@ -1,0 +1,426 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #618264;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 5rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+.nav a {
+  margin: 2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+.nav .link {
+  position: relative;
+  text-decoration: none;
+}
+.nav .link,
+.nav .link::after,
+.nav .link::before {
+  transition: 0.3s;
+}
+.nav .two::before,
+.nav .two::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.nav .two::before {
+  top: -2px;
+  left: -8px;
+  border-top: 0 solid #fff;
+  border-left: 0 solid #fff;
+}
+.nav .two::after {
+  bottom: -2px;
+  right: -8px;
+  border-bottom: 0 solid #fff;
+  border-right: 0 solid #fff;
+}
+.nav .two:hover::before,
+.nav .two:hover::after {
+  width: 30px;
+  height: 50%;
+}
+.nav .two:hover::before {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.nav .two:hover::after {
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.nav .logo {
+  margin-left: 3rem;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.75rem;
+}
+.nav a:visited {
+  display: none;
+}
+.nav .navbar-toggler {
+  position: absolute;
+  color: #fff;
+  background-color: transparent;
+  margin-left: 30px;
+  opacity: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 120vh;
+}
+
+.hero-bg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../img/heroimg.jpg");
+  width: 100%;
+  height: 120vh;
+  z-index: 0;
+}
+
+.hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -10;
+}
+
+.heading {
+  position: relative;
+  color: #fff;
+  z-index: 5;
+}
+.heading h1 {
+  margin-top: -20vh;
+  font-family: "Kaushan Script", cursive;
+  font-size: 5.5em;
+  padding: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.heading h3 {
+  font-weight: normal;
+}
+
+.show {
+  display: block;
+}
+
+.rooms {
+  position: relative;
+  margin-top: 3em;
+  height: 200vh;
+}
+.rooms .rooms-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 30px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.rooms .rooms-boxes {
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.rooms .text-rooms-title {
+  font-size: 35px;
+  margin-bottom: 35px;
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.rooms .text-rooms-small {
+  width: 50%;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.rooms img {
+  height: 50vh;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.rooms span {
+  font-weight: bold;
+  color: #79ac78;
+}
+.rooms .div-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 3rem;
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #79ac78;
+}
+
+.fade {
+  width: 50%;
+  box-shadow: 0 0 100px 5px #000; /* Czarny cień */
+}
+
+img {
+  height: 61vh;
+  box-shadow: 0 0 100px 5px #000; /* Czarny cień */
+}
+
+/* Stylowanie przycisków "Previous" i "Next" */
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  line-height: 1;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -20px;
+}
+
+/* Stylowanie przycisków "Previous" i "Next" po najechaniu myszą */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.custom-shape-divider-bottom-1696514304 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696514304 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 164px;
+}
+
+.custom-shape-divider-bottom-1696514304 .shape-fill {
+  fill: #618264;
+}
+
+.custom-shape-divider-bottom-1696518259 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 100;
+}
+
+.custom-shape-divider-bottom-1696518259 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 147px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1696518259 .shape-fill {
+  fill: #79ac78;
+}
+
+/* Media queries dla urządzeń o szerokości mniejszej niż 768px (telefony komórkowe i tablety w trybie portrait) */
+@media (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto; /* Dodajemy wysokość automatyczną dla paska nawigacji */
+  }
+  .nav .link {
+    display: none;
+    transition: display 0.5s;
+  }
+  .nav .navbar-toggler {
+    left: -10px;
+    margin-top: 30px;
+    font-size: 40px;
+    border: none;
+    opacity: 1;
+    z-index: 10000;
+  }
+  .nav .show {
+    display: block;
+  }
+  .nav a {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .wrapper {
+    text-align: center;
+  }
+  .hero-bg {
+    height: 100vh;
+  }
+  .heading {
+    height: 100vh;
+  }
+  .heading h1 {
+    font-size: 3rem;
+  }
+  .heading h3 {
+    font-size: 1rem;
+  }
+  .rooms .rooms-block {
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: transparent;
+  }
+  .rooms .text-rooms-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .rooms .text-rooms-small {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .rooms img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .gallery {
+    padding: 2rem;
+  }
+  .fade {
+    width: 100%;
+  }
+  .fade img {
+    height: 215px;
+  }
+  .slick-prev,
+  .slick-next {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+  }
+  .fade {
+    width: 100%;
+  }
+  .fade img {
+    height: 50vh;
+  }
+  .heading h1 {
+    font-size: 5rem;
+  }
+  .heading h3 {
+    font-size: 2rem;
+  }
+  .rooms .rooms-block {
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: transparent;
+  }
+  .rooms .text-rooms-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .rooms .text-rooms-small {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .rooms img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
