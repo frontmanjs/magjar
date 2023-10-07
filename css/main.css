@@ -291,12 +291,16 @@ img {
 .contact .contact-info-box .buttons-contact button {
   width: 360px;
   height: 60px;
-  box-shadow: 0 0 50px 5px #fff; /* Czarny cień */
-  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 1px solid #009fe3;
+  background-color: #003580;
   color: #fff;
 }
 .contact .contact-info-box i {
   margin-right: 15px;
+  color: #009fe3;
 }
 
 .custom-shape-divider-bottom-1696514304 {

@@ -303,19 +303,23 @@ img {
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			padding: 30px;
+			padding: 30px;	
 
 			button {
 				width: 360px;
 				height: 60px;
-				box-shadow: 0 0 50px 5px #fff; /* Czarny cień */
-				background-color: rgba(0, 0, 0, 0.3);
+				font-weight: bold;
+				text-transform: uppercase;
+				border-radius: 20px;
+				border: 1px solid #009fe3;
+				background-color: #003580;
 				color: #fff;
 			}
 		}
 
 		i{
 			margin-right: 15px;
+			color: #009fe3;
 		}
 	}
 }
