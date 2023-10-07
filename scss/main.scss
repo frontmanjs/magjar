@@ -376,8 +376,8 @@ footer {
 	align-items: flex-end;
 	justify-content: center;
 	text-align: center;
-	margin-left: 30px;
 	margin-bottom: 15px;
+	margin-inline: 15px;
 	font-size: 12px;
 	height: 5vh;
 	span {
@@ -593,7 +593,7 @@ footer {
 
 
 .about-us {
-height: 250vh;
+height: 230vh;
 	.text-about-us {
 		margin-inline: 20px;
 
@@ -626,8 +626,8 @@ height: 250vh;
 	}
 }
 footer{
-	height: 20vh;
-	font-size: 15px;
+	height: 10vh;
+	font-size: 10px;
 
 }
 }
@@ -657,8 +657,12 @@ footer{
 	.heading h3 {
 		font-size: 2rem;
 	}
-
+.gallery{
+	height: 90vh;
+}
 	.rooms {
+
+		height: 190vh;
 		.rooms-block {
 			flex-direction: column;
 			margin: 1rem 0;
@@ -690,7 +694,7 @@ footer{
 	}
 
 	.about-us {
-		height: 250vh;
+		height: 200vh;
 		font-size: 30px;
 	
 			.text-about-us {
@@ -707,8 +711,11 @@ footer{
 				display: none;
 			}
 		}
-		
+		.gallery{
+			height: 110vh;
+		}
 		.contact {
+			height: 100vh;
 			text-align: center;
 			.contact-info-box {
 				font-size: 30px;

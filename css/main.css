@@ -347,8 +347,8 @@ footer {
   align-items: flex-end;
   justify-content: center;
   text-align: center;
-  margin-left: 30px;
   margin-bottom: 15px;
+  margin-inline: 15px;
   font-size: 12px;
   height: 5vh;
 }
@@ -545,7 +545,7 @@ footer span {
     height: 40px;
   }
   .about-us {
-    height: 250vh;
+    height: 230vh;
   }
   .about-us .text-about-us {
     margin-inline: 20px;
@@ -570,8 +570,8 @@ footer span {
     color: #009fe3;
   }
   footer {
-    height: 20vh;
-    font-size: 15px;
+    height: 10vh;
+    font-size: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -595,6 +595,12 @@ footer span {
   }
   .heading h3 {
     font-size: 2rem;
+  }
+  .gallery {
+    height: 90vh;
+  }
+  .rooms {
+    height: 190vh;
   }
   .rooms .rooms-block {
     flex-direction: column;
@@ -620,7 +626,7 @@ footer span {
     margin-bottom: 30px;
   }
   .about-us {
-    height: 250vh;
+    height: 200vh;
     font-size: 30px;
   }
   .about-us .text-about-us {
@@ -635,7 +641,11 @@ footer span {
   .about-us .offer {
     display: none;
   }
+  .gallery {
+    height: 110vh;
+  }
   .contact {
+    height: 100vh;
     text-align: center;
   }
   .contact .contact-info-box {
