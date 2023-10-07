@@ -180,8 +180,10 @@ body {
   margin-top: 3em;
   height: 220vh;
   background-color: #79ac78;
+  perspective: 800px;
 }
 .rooms .rooms-block {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;

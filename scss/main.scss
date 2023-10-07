@@ -12,6 +12,7 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #618264;
+	
 }
 
 .nav {
@@ -200,8 +201,11 @@ body {
 	margin-top: 3em;
 	height: 220vh;
 	background-color: #79ac78;
+	perspective: 800px;
+
+	
 	.rooms-block {
-		// position: relative;
+		position: relative;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
