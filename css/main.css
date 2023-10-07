@@ -140,10 +140,46 @@ body {
   display: block;
 }
 
+.about-us {
+  position: relative;
+  bottom: -50px;
+  height: 150vh;
+  background-color: #618264;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: justify;
+}
+.about-us .text-about-us {
+  margin-inline: 100px;
+}
+.about-us .text-about-us p {
+  margin-bottom: 30px;
+}
+.about-us h3 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.about-us .offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+.about-us .offer p {
+  margin-top: 60px;
+  margin-inline: 30px;
+}
+.about-us .offer p i {
+  font-size: 30px;
+  text-shadow: 12px 12px 14px rgba(0, 0, 0, 0.5);
+}
+
 .rooms {
   position: relative;
   margin-top: 3em;
-  height: 200vh;
+  height: 220vh;
+  background-color: #79ac78;
 }
 .rooms .rooms-block {
   display: flex;
@@ -184,7 +220,8 @@ body {
 }
 .rooms span {
   font-weight: bold;
-  color: #79ac78;
+  font-size: 25px;
+  color: #fff;
 }
 .rooms .div-text {
   display: flex;
@@ -195,9 +232,10 @@ body {
 }
 
 .title {
-  margin-bottom: 3rem;
-  font-size: 4em;
-  color: #fff;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  color: #b0d9b1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -207,12 +245,11 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 120vh;
-  background-color: #79ac78;
+  height: 140vh;
 }
 
 .fade {
-  width: 50%;
+  width: 40%;
   box-shadow: 0 0 50px 5px #000; /* Czarny cień */
 }
 
@@ -256,8 +293,8 @@ img {
 
 .contact {
   position: relative;
-  display: flex;
-  height: 150vh;
+  height: 120vh;
+  background-color: #79ac78;
 }
 .contact .contact-info-box {
   display: flex;
@@ -283,6 +320,7 @@ img {
   box-shadow: 0 0 50px 5px #000; /* Czarny cień */
 }
 .contact .contact-info-box .buttons-contact {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -297,10 +335,25 @@ img {
   border: 1px solid #009fe3;
   background-color: #003580;
   color: #fff;
+  cursor: pointer;
 }
 .contact .contact-info-box i {
   margin-right: 15px;
   color: #009fe3;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  height: 5vh;
+}
+footer span {
+  font-weight: bold;
 }
 
 .custom-shape-divider-bottom-1696514304 {
@@ -343,7 +396,7 @@ img {
 }
 
 .custom-shape-divider-bottom-1696518259 .shape-fill {
-  fill: #79ac78;
+  fill: #618264;
 }
 
 .custom-shape-divider-bottom-1696626052 {
@@ -363,6 +416,48 @@ img {
 }
 
 .custom-shape-divider-bottom-1696626052 .shape-fill {
+  fill: #79ac78;
+}
+
+.custom-shape-divider-bottom-1696684256 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696684256 svg {
+  position: relative;
+  display: block;
+  width: calc(128% + 1.3px);
+  height: 185px;
+}
+
+.custom-shape-divider-bottom-1696684256 .shape-fill {
+  fill: #79ac78;
+}
+
+.custom-shape-divider-bottom-1696684842 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696684842 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 191px;
+}
+
+.custom-shape-divider-bottom-1696684842 .shape-fill {
   fill: #618264;
 }
 
@@ -438,7 +533,7 @@ img {
     padding: 2rem;
   }
   .fade {
-    width: 100%;
+    width: 90%;
   }
   .fade img {
     height: 215px;
@@ -449,6 +544,35 @@ img {
     width: 40px;
     height: 40px;
   }
+  .about-us {
+    height: 250vh;
+  }
+  .about-us .text-about-us {
+    margin-inline: 20px;
+  }
+  .about-us .text-about-us p {
+    margin-bottom: 30px;
+  }
+  .about-us h3 {
+    display: none;
+  }
+  .about-us .offer {
+    display: none;
+  }
+  .contact .contact-info-box .map {
+    display: none;
+  }
+  .contact .contact-info-box .buttons-contact button {
+    width: 200px;
+  }
+  .contact .contact-info-box i {
+    margin-right: 15px;
+    color: #009fe3;
+  }
+  footer {
+    height: 20vh;
+    font-size: 15px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .nav {
@@ -456,8 +580,12 @@ img {
     flex-direction: row;
     height: 100px;
   }
+  .nav a {
+    margin: 1.3rem;
+    font-size: 20px;
+  }
   .fade {
-    width: 100%;
+    width: 90%;
   }
   .fade img {
     height: 50vh;
@@ -480,12 +608,56 @@ img {
   }
   .rooms .text-rooms-small {
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 30px;
+  }
+  .rooms .text-rooms-small span {
+    font-size: 35px;
   }
   .rooms img {
     max-width: 100%;
     height: auto;
     margin-bottom: 30px;
+  }
+  .about-us {
+    height: 250vh;
+    font-size: 30px;
+  }
+  .about-us .text-about-us {
+    margin-inline: 50px;
+  }
+  .about-us .text-about-us p {
+    margin-bottom: 30px;
+  }
+  .about-us h3 {
+    display: none;
+  }
+  .about-us .offer {
+    display: none;
+  }
+  .contact {
+    text-align: center;
+  }
+  .contact .contact-info-box {
+    font-size: 30px;
+  }
+  .contact .contact-info-box .map {
+    display: none;
+  }
+  .contact .contact-info-box .buttons-contact {
+    justify-content: center;
+  }
+  .contact .contact-info-box .buttons-contact button {
+    font-size: 30px;
+    width: 460px;
+    height: 150px;
+  }
+  .contact .contact-info-box i {
+    margin-right: 15px;
+    color: #009fe3;
+  }
+  footer {
+    height: 20vh;
+    font-size: 25px;
   }
 }/*# sourceMappingURL=main.css.map */
